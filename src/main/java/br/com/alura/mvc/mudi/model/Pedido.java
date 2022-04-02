@@ -1,13 +1,13 @@
 package br.com.alura.mvc.mudi.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Pedido {
 
 	private String nomeProduto;
 	private BigDecimal valorNegociado;
-	private LocalDate dataDaEntrega;
+	private Date dataDaEntrega;
 	private String urlProduto;
 	private String urlImagem;
 	private String descricao;
@@ -26,14 +26,6 @@ public class Pedido {
 
 	public void setValorNegociado(BigDecimal valorNegociado) {
 		this.valorNegociado = valorNegociado;
-	}
-
-	public LocalDate getDataDaEntrega() {
-		return dataDaEntrega;
-	}
-
-	public void setDataDaEntrega(LocalDate dataDaEntrega) {
-		this.dataDaEntrega = dataDaEntrega;
 	}
 
 	public String getUrlProduto() {
@@ -58,6 +50,14 @@ public class Pedido {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public Date getDataDaEntrega() {
+		return dataDaEntrega;
+	}
+
+	public void setDataDaEntrega(Date dataDaEntrega) {
+		this.dataDaEntrega = dataDaEntrega;
 	}
 
 }
